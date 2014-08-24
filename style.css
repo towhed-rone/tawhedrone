@@ -1,0 +1,294 @@
+/*  
+Theme Name: Towhed Rone
+Theme URI: http://www.towhedrone.com
+Description: A theme for Wordpress. Featuring threaded-comments, fixed-width, right-sidebar, custom-background, custom-header, featured-images, full-width-template, custom-menu, sticky-post, widget for sidebar and 3-column bottom menu, and translation-ready. To display the Featured Slider in homepage, go to your post, set the Featured Images and add category name 'Featured'. If there is no post in Featured category, the slider will not appear. Open readme.txt (included in the zip file) for more documentation.
+Version: 1.5
+
+*/
+
+.fix {overflow:hidden}
+.floatleft {float:left}
+.floatright {float:right}
+.alignleft {float:left;margin-right:10px;}
+.alignright {float:right;margin-left:10px;}
+.aligncenter {display:block;margin:0 auto}
+a, a:active, a:focus, a:active {text-decoration:none !important}
+img {max-width:100%}
+p{font-family:'Open Sans','sans-serif'}
+h1, h2, h3, h4, h5, h6 {font-weight:normal;margin:0 0 15px;font-family: 'bebasregular','Open Sans', 'sans-serif';}
+.column{width:100%; ;background:url(img/bg.png) repeat;margin:0 auto;display:block;transition: all 0.9s ease 0s;-moz-transition: all 0.9s ease 0s;-webkit-transition: all 0.9s ease 0s;-o-transition: all 0.9s ease 0s;}
+ul {margin:0;padding:0;list-style:none }
+body {font-family: 'Droid Sans','arial' 'sans-serif';}
+.main{margin:0 auto;width:1160px;background:#ffffff;padding:10px}
+.header{margin-top:10px}
+.header_left{}
+.header_left p{color: #9E9B9B;
+font-family: Brush Script Std;
+font-size: 22px;
+margin-top: -17px;}
+.header_left h1{color: #E7E7E7;
+font-family: bebasregular;
+font-size: 38px;}
+.header_left h1 span{color: #A29999;
+margin-left: 10px;}
+.header_right{}
+
+.mobile{margin-bottom: 17px;}
+.mobile img{float: left;
+margin-left: 78px;
+margin-top: -12px;
+width: 31px;}
+.mobile p{color: #989191;
+float: right;
+font-size: 22px;
+}
+.social{margin-right: 6px;
+margin-top: -12px;}
+.social img{height:28px}
+.search{margin-top: -12px;}
+.search input[type=text]{-moz-border-bottom-colors: none;
+-moz-border-image: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: #000000;
+border-style: solid;
+border-width: 1px 0 1px 1px;
+height: 28px;
+margin-left: 0;
+margin-right: -4px;
+padding: 5px;}
+.search input[type=submit]{background: url("img/search.png") no-repeat scroll center center #000000;
+border: 1px solid #000000;
+height: 28px;
+margin-right: -4px;
+padding: 4px;
+position: relative;
+text-indent: -9999px;
+width: 32px;}
+.mainmenu{background:#898282;margin-top:15px;margin-bottom:5px;min-height:46px}
+.mainmenu ul{}
+.mainmenu ul li{float:left;border-right: 1px solid #5a5656}
+.mainmenu ul li:last-child{border-right:0px solid}
+.mainmenu ul li a{font-family:bebasregular;font-size:15px;padding:12px 15px;color: #fff;display:block}
+.mainmenu ul li:hover{background:#5a5656;}
+
+
+.slider_area{height: 350px;
+margin-top: -5px;
+width: 760px;
+margin-top:2px}
+.slider{}
+.my_work{}
+.my_work h3{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 9px 9px 9px 9px;
+color: #FBFBFB;
+font-size: 21px;
+height: 35px;
+margin: 0 62px 5px;
+padding-top: 8px;
+text-align: center;
+top: 33px;
+width: 200px;}
+.my_work img{border: 4px solid #D7CFCF;
+height: 145px;
+margin: 8px 0 0 8px;
+width: 180px;}
+.my_work img:hover{color:#D7CFCF;}
+.middle_content{border-top: 1px solid #898282;
+margin-top: 64px;}
+.single{width: 360px;margin-left:20px}
+.about_me{margin-top: 40px;}
+.about_me img{border: 3px solid #D7CFCF;
+height: 280px;
+margin-bottom: 10px;
+width: 360px;}
+.about_me p{font-size: 16px;
+line-height: 26px;}
+.about_me_title,.do_title,.blog_title,.gallery_title{border-bottom: 3px solid #898282;
+font-family: bebasregular;
+font-size: 20px;
+line-height: 25px;
+
+position: relative;}
+.me_more,.gallery_more{background: url("img/pluse.png") no-repeat scroll 55px 5px #898282;
+color: #FFFFFF;
+float: right;
+font-size: 12px;
+margin-top: -40px;
+padding: 4px 34px 4px 13px;
+text-transform: uppercase;}
+.skill{margin-top: 40px;}
+.skill ul{margin-bottom:40px}
+.skill ul li{background: url("img/right.png") no-repeat scroll 0 -4px transparent;
+color: #898282;
+font-family: open sans-serif;
+font-size: 18px;
+font-weight: bold;
+line-height: 25px;
+margin-top: 12px;
+padding-left: 36px;}
+.skill ul li span{}
+
+.blog_post{margin-top: 10px;}
+.blog_more{background: url("img/pluse.png") no-repeat scroll 55px 5px #898282;
+color: #FFFFFF;
+float: right;
+font-size: 12px;
+margin-top: -40px;
+padding: 4px 34px 4px 13px;
+text-transform: uppercase;}
+.single_blog{}
+.single_blog img{border: 3px solid #D7CFCF;
+float: left;
+margin-bottom: 8px;
+margin-right: 8px;
+padding: 0;
+width: 150px;
+height:125px}
+.single_blog a{color: #897F7F;
+font-family: open sans-serif;
+font-size: 14px;
+font-weight: bold;
+line-height: 23px;}
+.single_blog p{font-size: 14px;}
+.footer_area{background: none repeat scroll 0 0 #898282;
+height: 131px;margin-top: 40px;
+margin-bottom: -10px;
+margin-left: -10px;
+width: 1160px;}
+.hire_me{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 12px 12px 12px 12px;
+color: #FFFFFF;
+font-size: 33px;
+margin: 0 57px 13px 77px;
+padding: 15px;
+text-transform: uppercase;}
+
+.my_protfolio{}
+
+.from_gallery{}
+.from_gallery img{border: 3px solid #D7CFCF;
+margin: 3px;
+padding: 0;
+width: 172px;height:140px}
+.hire{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 6px 6px 6px 6px;
+color: #0A0A0A;
+float: left;
+font-size: 20px;
+margin-left: 34px; font-family: arial;
+margin-top: 43px;
+padding: 10px 24px;}
+.hire:hover{background:#5A5656;color:#FFFFFF}
+.footer_middle{margin-left: 484px;}
+.footer_middle span{color: #FFFFFF;
+font-family: Brush Script Std;
+font-size: 41px;
+margin-top: 10px;
+text-transform: uppercase;}
+.my_protfolio h3{}
+.my_protfolio{background: none repeat scroll 0 0 #D7CFCF;
+border: 7px none;
+border-radius: 6px 6px 6px 6px;
+color: #0000;
+font-size: 20px;
+margin-left: 43px;
+padding: 20px 14px 13px;
+text-transform: none;
+width: 176px;}
+.my_protfolio:hover{background:#5A5656;color:#FFFFFF}
+.footer_area p{color: #FFFFFF;
+float: right;
+font-size: 20px;
+margin-top: -73px;}
+
+
+.sidebar_post{}
+.sidebar_post img{border: 2px solid #D7CFCF;
+height: 80px;
+width: 100px;}
+.sidebar_post a{font-size: 12px;
+line-height: 12px;}
+.sidebar_post p{font-size: 10px;}
+.sidebar_post{border-bottom: 1px solid #D7CFCF;
+margin-bottom: 11px;}
+.single_sidebar{margin-bottom: 10px;margin-left: 20px;}
+.single_sidebar h2{border-bottom: 3px solid #898282;
+font-family: bebasregular;
+font-size: 20px;
+line-height: 25px;
+
+position: relative;}
+.single_sidebar img{}
+.sidebar_area{width: 380px;}
+.page_content{margin-left: 10px;
+width: 750px;}
+.blog_single{}
+.blog_single a{color: #000000;
+font-family: opensans;
+font-size: 30px;}
+.blog_single img{border: 3px solid #D7CFCF;
+float: left;
+height: 180px;
+margin-right: 10px;
+width: 220px;}
+.blog_single p{font-family: open sans-serif;
+font-size: 16px;
+line-height: 24px;}
+.blog_single{border-bottom: 2px solid #D7CFCF;
+height: 300px;
+margin: 10px 0 16px;}
+.post_more{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 2px 2px 2px 2px;
+color: #FFFFFF;
+float: right;
+
+padding: 10px;}
+.post_more a{color: #FFFFFF;
+font-size: 14px;}
+.older_post{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 2px 2px 2px 2px;
+color: #FFFFFF;
+font-weight: bold;
+padding: 9px;}
+.new_post{background: none repeat scroll 0 0 #D7CFCF;
+border-radius: 2px 2px 2px 2px;
+color: #FFFFFF;
+font-weight: bold;
+padding: 9px;}
+#post-title h2{border-bottom: 1px dashed #666666;
+font-family: open sans-serif;
+font-size: 30px;
+margin-top: 5px;}
+#post-title h2 a{color:#666666}
+.entry{}
+.entry p{font-size: 17px;
+line-height: 30px;}
+.meta_left{}
+.meta_right a{color: #666666;
+font-size: 27px;}
+.meta_right{margin-top:10px}
+.nav-previous{}
+.nav-next{}
+.meta-nav{}
+.date{color: #666666;
+
+font-size: 22px;
+margin-top: 30px;}
+#comments{display:none}
+.blog_posts{margin-top:10px}
+.single_portfolio img{border: 1px solid #666666;
+height: 400px;
+margin-bottom: 9px;
+margin-right: 9px;
+padding: 5px;
+width: 339px;}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+.{}
+
