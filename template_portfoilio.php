@@ -25,16 +25,22 @@
 
 jQuery(document).ready(function($){
 
-	$('#image1').addimagezoom({ // single image zoom
+	$('.attachment-40 .wp-post-image').addimagezoom({ // single image zoom
 		zoomrange: [3, 10],
 		magnifiersize: [300,300],
 		magnifierpos: 'right',
 		cursorshade: true,
-		largeimage: '<?php echo get_template_directory_uri(); ?>/img/hayden.jpg' //<-- No comma after last option!
+		largeimage: '<?php the_post_thumbnail(); ?>' //<-- No comma after last option!
 	})
 
 
-	$('#image2').addimagezoom() // single image zoom with default options
+	$('#image2').addimagezoom({ // single image zoom
+		zoomrange: [3, 10],
+		magnifiersize: [300,300],
+		magnifierpos: 'right',
+		cursorshade: true,
+		largeimage: '<?php the_post_thumbnail(); ?>' //<-- No comma after last option!
+	})
 	
 	$('#multizoom1').addimagezoom({ // multi-zoom: options same as for previous Featured Image Zoomer's addimagezoom unless noted as '- new'
 		descArea: '#description', // description selector (optional - but required if descriptions are used) - new
@@ -58,8 +64,7 @@ jQuery(document).ready(function($){
 })
 
 </script>
-<img id="image1" border="0" src="<?php echo get_template_directory_uri(); ?>/img/haydensmall.jpg" style="width:250px;height:338px">
-<img id="image2" border="0" src="<?php echo get_template_directory_uri(); ?>/img/listenmusic.jpg" style="width:200px;height:150px">			
+	
 					<div class="main_content fix">
 			<div class="page_content floatleft">
 				<div class="single_portfolio">
@@ -71,7 +76,7 @@ jQuery(document).ready(function($){
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 
-						<a href="<?php $key="link"; echo get_post_meta($post->ID, $key, true); ?>"><?php the_post_thumbnail('portfolio-thumbnail'); ?></a>
+						<a href="<?php $key="link"; echo get_post_meta($post->ID, $key, true); ?>"> <?php the_post_thumbnail($post->ID,'portfolio-mashpy'); ?></a>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
