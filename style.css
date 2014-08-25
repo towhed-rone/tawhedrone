@@ -279,12 +279,14 @@ margin-top: 30px;}
 #comments{display:none}
 .blog_posts{margin-top:10px}
 .single_portfolio img{border: 1px solid #666666;
-height: 400px;
+height: 300px;
 margin-bottom: 9px;
 margin-right: 9px;
 padding: 5px;
-width: 339px;}
-.{}
+width: 238px;}
+.gallery_photo img{ border: 2px solid #666666;
+    max-width: 100%;
+    padding: 2px;}
 .{}
 .{}
 .{}

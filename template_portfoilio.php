@@ -7,10 +7,7 @@
 
 <?php get_header();?>
 		
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/prototype.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scriptaculous.js?load=effects"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lightbox.js"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.css" type="text/css" media="screen" />
+
 					<div class="main_content fix">
 			<div class="page_content floatleft">
 				<div class="single_portfolio">
@@ -22,7 +19,7 @@
 						?>  
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 760,350 ), false, '' ); echo $src[0]; ?>" rel="lightbox[roadtrip]"><?php the_post_thumbnail('portfolio-thumbnail'); ?></a>
+<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,400 ), false, '' ); echo $src[0]; ?>" rel="lightbox[roadtrip]"><?php the_post_thumbnail('single_portfolio-thumbnail'); ?></a>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>

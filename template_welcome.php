@@ -40,7 +40,27 @@
 					</ul>
 					
 					
-						<?php dynamic_sidebar('gallery-widget');?>
+					<div class="from_gallery">
+						<h2 class="gallery_title">From The Gallery</h2>
+						<span class="gallery_more"><a href="https://www.facebook.com/" >More</a></span>
+					
+					
+				<?php if(!is_paged()) { ?>
+						<?php
+							$args = array( 'post_type' => 'gallery-images', 'posts_per_page' => 4 );
+							$loop = new WP_Query( $args );
+						?>  
+						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+
+						<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,400 ), TRUE, '' ); echo $src[0]; ?>" rel="lightbox[roadtrip]"><?php the_post_thumbnail('photo-thumbnail'); ?></a>
+						
+						<?php endwhile; ?>
+						<?php wp_reset_query(); ?>
+						<?php } ?>	
+					
+					</div>
+						
 	
 					
 					

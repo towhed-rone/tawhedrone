@@ -43,6 +43,7 @@ add_theme_support( 'post-thumbnails', array( 'post','slider-images','portfolio-i
 	add_image_size( 'sidebar-thumbnail', 100, 80, true );
 	add_image_size( 'blog-thumbnail', 220, 180, true );
 	add_image_size( 'home-thumbnail', 500, 400, true );
+		add_image_size( 'single_portfolio-thumbnail', 300, 238, true );
 
 /*Slider Area*/
 
@@ -153,15 +154,6 @@ function create_post_type() {
 		function brightpage_widget_areas() {
 
 		register_sidebar( array(
-			'name' => __( 'Gallery widget', 'towhedrone' ),
-			'id' => 'gallery-widget',
-			'description' => __( 'An optional widget area for your welcome message area.', 'brightpage' ),
-			'before_widget' => '<div class="big">',
-			'after_widget' => '</div>',
-			'before_title' => '',
-			'after_title' => '',
-		) );
-		register_sidebar( array(
 			'name' => __( 'About Me', 'towhedrone' ),
 			'id' => 'about-widget',
 			'description' => __( 'An optional widget area for your welcome message area.', 'brightpage' ),
@@ -233,39 +225,7 @@ add_shortcode('blog_post', 'blog_post_shortcode');
 /*For Gallery Images*/
 
 
-	
-	function gallery_post_shortcode($atts){
-	extract( shortcode_atts( array(
-		'title' => '',
-		'link' => '',
 		
-	), $atts, 'photo' ) );
-	
-    $q = new WP_Query(
-        array(  'posts_per_page' => '4', 'post_type' => 'gallery-images')
-        );
-$list = '<div class="from_gallery"><h2 class="gallery_title">'.$title.'</h2><a href="'.$link.'" class="gallery_more">More</a>';
-
-while($q->have_posts()) : $q->the_post();
-    //get the ID of your post in the loop
-    $id = get_the_ID();
-
-
-	$post_thumbnail= get_the_post_thumbnail( $post->ID, 'photo-thumbnail' ); 
-	$big_thumbnail= get_the_post_thumbnail( $post->ID, 'home-thumbnail' );        
-    $list .= '
-	
-	    '.$post_thumbnail.'
-						
-						
-	';        
-endwhile;
-$list.= '</div>';
-wp_reset_query();
-return $list;
-}
-
-add_shortcode('photo', 'gallery_post_shortcode');	
 	
 	/*For Welcome Image*/
 	

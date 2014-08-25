@@ -31,7 +31,7 @@
 			<div class="header_top">
 			<div class="header fix">
 				<div class="header_left floatleft fix">
-				<a href="<?php the_permalink(); ?>"><h1>Towhed<span>Rone</span></h1></a>
+				<a href="<?php echo home_url('Home'); ?>"><h1>Towhed<span>Rone</span></h1></a>
 				<p>A Thinker Who THink Without Thinking</p>	
 				</div>
 				<div class="header_right floatright fix">
@@ -41,8 +41,12 @@
 					</div>
 					
 					<div class="search floatright">
-						<input type="text" value="Search">
-						<input type="submit">
+						<form method="get" id="searchform" action="<?php echo home_url(); ?>/">
+						<input type="text" value="<?php esc_attr_e( 'Search', 'brightpage' ); ?>" name="s" id="s" onfocus="if (this.value == '<?php esc_attr_e( 'Search', 'brightpage' ); ?>') {this.value = '';}" onblur="if (this.value == '') {this.value = '<?php esc_attr_e( 'Search', 'brightpage' ); ?>';}" />
+						<input type="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'brightpage' ); ?>" />
+						<input type="hidden" name="post_type" value="post">
+						</form>
+						
 					</div>
 					<div id="" class="social floatleft fix">
 						<a href="https://www.facebook.com/towhedurr"><img src="<?php echo get_template_directory_uri(); ?>/img/facebook.png"></a>

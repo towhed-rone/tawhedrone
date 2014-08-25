@@ -64,8 +64,8 @@
 //
 //	Configuration
 //
-var fileLoadingImage = "img/loading.gif";		
-var fileBottomNavCloseImage = "img/closelabel.gif";
+var fileLoadingImage = "<?php echo get_template_directory_uri(); ?>/img/loading.gif";		
+var fileBottomNavCloseImage = "<?php echo get_template_directory_uri(); ?>/img/closelabel.gif";
 
 var animate = true;	// toggles resizing animations
 var resizeSpeed = 7;	// controls the speed of the image resizing animations (1=slowest and 10=fastest)
