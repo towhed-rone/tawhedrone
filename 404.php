@@ -6,6 +6,8 @@
 			<div class="page_content floatleft">
 <div class="page_not_found">
 	<p><span>404</span>ERROR</p>
+	<p>Page Not Found</p>
+	
 </div>
 			
 			</div>
