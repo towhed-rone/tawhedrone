@@ -16,7 +16,7 @@
 			<div class="gallery_photo">
 				<?php if(!is_paged()) { ?>
 						<?php
-							$args = array( 'post_type' => 'portfolio-images', 'posts_per_page' => -1 );
+							$args = array( 'post_type' => 'gallery-images', 'posts_per_page' => -1 );
 							$loop = new WP_Query( $args );
 						?>  
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
