@@ -29,6 +29,18 @@
 		jQuery("a[rel^='prettyPhoto']").prettyPhoto();
 	  });
 	</script>	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.scrollUp.min.js" type="text/javascript" charset="utf-8"></script>
+	
+	<script>
+
+		/* scrollUp Minimum setup */
+		jQuery(function () {
+			jQuery.scrollUp();
+		});
+
+		
+
+	</script>	
    
 		<?php wp_footer();?>
 	</body>
