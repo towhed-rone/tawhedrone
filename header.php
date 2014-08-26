@@ -10,10 +10,9 @@
 		<link href="<?php echo get_template_directory_uri(); ?>/css/commentrepply.css" rel="stylesheet" media="screen">
 		<!-- Nivo Slider CSS -->
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/themes/default/default.css" type="text/css" media="screen" />
-		
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/prettyPhoto.css" type="text/css" media="screen" charset="utf-8" />
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/nivo-slider.css" type="text/css" media="screen" />
-
-
+        
 		<!-- Main CSS -->
 		<link href="<?php bloginfo("stylesheet_url")?>" rel="stylesheet" media="screen">
 		

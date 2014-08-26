@@ -53,7 +53,7 @@
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
 
-						<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,400 ), TRUE, '' ); echo $src[0]; ?>" rel="lightbox[roadtrip]"><?php the_post_thumbnail('photo-thumbnail'); ?></a>
+						<a href="<?php $src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array( 500,400 ), TRUE, '' ); echo $src[0]; ?>" rel="prettyPhoto[gallery2]"><?php the_post_thumbnail('photo-thumbnail'); ?></a>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>

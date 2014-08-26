@@ -8,20 +8,12 @@
 						?>  
 						<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-						
-                               
-								
-								
-					
 						<?php the_post_thumbnail('slider-thumbnail', array('class' => 'postthumbnails')); ?>
 						
 						<?php endwhile; ?>
 						<?php wp_reset_query(); ?>
 						<?php } ?>		
 
-		
-
-			
 				
 			</div>
 					</div>

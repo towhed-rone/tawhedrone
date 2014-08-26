@@ -11,27 +11,26 @@
 			
 		</div>
 		</div>
-		<script type="text/javascript" src="js/thumbnailviewer2.js"></script>
-		
-		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.nivo.slider.pack.js"></script>
-		
-		<script src="<?php echo get_template_directory_uri(); ?>/http://code.jquery.com/jquery.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/prototype.js"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/scriptaculous.js?load=effects"></script>
-<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/lightbox.js"></script>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/lightbox.css" type="text/css" media="screen" />
-		
-		<script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js"></script>
-		
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.nivo.slider.pack.js"></script>
+
+		 <script type="text/javascript">
+    jQuery(window).load(function() {
+        jQuery('#slider').nivoSlider({
+			controlNav: false
+		});
+    });
+    </script>
+
+	
+	<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>	
+	<script type="text/javascript" charset="utf-8">
+	  jQuery(document).ready(function(){
+		jQuery("a[rel^='prettyPhoto']").prettyPhoto();
+	  });
+	</script>	
+   
 		<?php wp_footer();?>
 	</body>
 </html>
-<script type="text/javascript">
-		jQuery(window).load(function() {
-			jQuery('#slider').nivoSlider({
-				controlNav: false
-			});
-			
-				
-		});
-		</script>	
+

@@ -1,8 +1,11 @@
 <?php
 
 	/* Adding Latest jQuery from Wordpress */
+	
+	
 	function towhed_latest_jquery() {
 		wp_enqueue_script('jquery');
+		 
 	}
 	add_action('init', 'towhed_latest_jquery');
 	

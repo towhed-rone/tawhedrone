@@ -105,7 +105,7 @@ margin-bottom: 10px;
 width: 360px;}
 .about_me p{font-size: 16px;
 line-height: 26px;}
-.about_me_title,.do_title,.blog_title,.gallery_title{border-bottom: 3px solid #898282;
+.about_me_title,.do_title,.blog_title,.gallery_title,.search_result,.single_sidebar h2{border-bottom: 3px solid #898282;
 font-family: bebasregular;
 font-size: 20px;
 line-height: 25px;
@@ -272,10 +272,8 @@ font-size: 27px;}
 .nav-previous{}
 .nav-next{}
 .meta-nav{}
-.date{color: #666666;
-
-font-size: 22px;
-margin-top: 30px;}
+.date{font-size: 13px;
+margin-top: 7px;}
 #comments{display:none}
 .blog_posts{margin-top:10px}
 .single_portfolio img{border: 1px solid #666666;
@@ -296,7 +294,8 @@ margin-top: 50px;}
 font-size: 152px;
 padding-right: 56px;
 text-align: center;}
-.{}
-.{}
+.search_blog{border-bottom: 0 solid #FFFFFF;
+margin-bottom: 80px;}
+.textwidget img{margin-bottom:5px}
 .{}
 
